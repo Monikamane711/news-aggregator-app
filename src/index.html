@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>News Aggregator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Aggregator App</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
-  <h1 class="site-title">News Aggregator</h1>
-  
-  <div class="search-container">
-    <input type="text" name="search" id="search" placeholder="Type and press enter to search..." />
+<body onload="start()">
+  <!--Main Header section and toggle key-->
+   <div class="title">NEWS AGGREGATOR</div>  
+            <div class="toggle">Toggle to Lite Mode</div>  
+            <label class="label">
+                <input type="checkbox" id="toggle1" unchecked >
+                <div class="slider round"></div>
+            </label>
+           
+ 
+  <!--Search Bar-->
+  <div class="search-bar">
+    <input type="text" name="search" id="search" placeholder="Type and press enter to search..."/>
   </div>
-
-  <ul id="news-articles">
-
-  </ul>
+  <!--News Display Area -->
+  <ul id="news-articles"></ul>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
