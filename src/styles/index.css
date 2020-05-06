@@ -53,7 +53,7 @@
   height: 34px;
   top: 10px;
   }
-  .slider {
+  .ball {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -64,7 +64,7 @@
   -webkit-transition: .4s;
   transition: .4s;
   }
-  .slider:before {
+  .ball:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -75,22 +75,22 @@
   -webkit-transition: .4s;
   transition: .4s;
   }
-  input:checked + .slider {
+  input:checked + .ball {
   background-color: rgba(39, 35, 35, 0.986);
   }
-  input:focus + .slider {
+  input:focus + .ball{
   box-shadow: 0 0 1px ;
   }
-  input:checked + .slider:before {
+  input:checked + .ball:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
   }
   
-  .slider.round {
+  .ball {
   border-radius: 34px;
   }
-  .slider.round:before {
+  .ball:before {
   border-radius: 50%;
   }
   /* CSS FOR SEARCH BAR */
@@ -126,7 +126,7 @@
   .container {
     max-width: 200px;
     border: black 10px solid;
-    height: 530px;
+    height: 510px;
     padding: 35px;
     margin-left: 9px;
     background-color: var(--box-color);
@@ -211,7 +211,7 @@
   
   /* Code for Responsive Web design */
   @media only screen and (max-width: 600px) {
-    .mainheading {
+    .title {
       color: var(--font-color);
       font-size: 25px;
       font-family: 'Trebuchet MS';
@@ -223,18 +223,19 @@
       padding-right: 23px;
       display: inline-block;
     }
-    .toggletxt {
+    .toggle {
       color: var(--font-color);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Times New Roman';
       display: block;
-      margin-top: 7%;
-      font-size: larger;
+      margin-top: 5%;
+      font-size: 17px;
+      margin-left: 40%;
     }
     .label {
       margin-left: 300px;
       height: 25px;
       width: 60px;
-      margin-top: 10px;
+      margin-top:10px;
     }
     .toggletxt{
       
@@ -248,7 +249,7 @@
       margin: 0px;
       padding: 0px;
     }
-    .slider {
+    .ball {
       
       height: 33px;
      
@@ -264,6 +265,7 @@
       border-top: black;
       border-left: black;
       border-right: black;
+      margin-top: 20px;
     }
     .container {
       max-width: 240px;
@@ -287,9 +289,10 @@
     .not-found {
       color: var(--font-color);
       font-family: sans-serif;
-      font-size: 25px;
+      font-size: 18px;
       margin-left: -20px;
       list-style-type: none;
+      margin-top: 10px;
     }
     .load {
       color: var(--font-color);

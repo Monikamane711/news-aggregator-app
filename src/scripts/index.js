@@ -5,13 +5,14 @@ function toggle_func(e){
    {
     document.documentElement.setAttribute('data-theme', 'lite');
     document.querySelector(".toggle").innerHTML="Toggle to Dark Mode";
-    }
+   }
 else
    {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.querySelector(".toggle").innerHTML="Toggle to Lite Mode";
    }   
 }
+
 
 //Api-Key//
 const apikey="284f78b53ae849dcbf0ef22b1dda9397";
